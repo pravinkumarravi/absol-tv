@@ -1,0 +1,31 @@
+{
+  "type": "View",
+  "props": {
+    "styles": {
+      "flex": 1,
+      "backgroundColor": "green",
+      "alignItems": "center",
+      "justifyContent": "center"
+    }
+  },
+  "children": [
+    {
+      "key": 1,
+      "type": "Text",
+      "children": "Hello"
+    },
+    {
+      "key": 2,
+      "type": "Image",
+      "props": {
+        "source": {
+          "uri": "https://reactnative.dev/img/tiny_logo.png"
+        },
+        "style": {
+          "width": 66,
+          "height": 58
+        }
+      }
+    }
+  ]
+}
