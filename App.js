@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactNative, { SafeAreaView, StyleSheet } from "react-native";
+import axios from "axios";
+import fetchSlides from "./services/api";
 
 const styles = StyleSheet.create({
   container: {
@@ -63,6 +65,18 @@ const RuntimeComponent = ({ key, type, props, children }) => {
 };
 
 export default function App() {
+  const [components, setComponents] = useState({});
+
+  useEffect(() => {
+    async function fetchSlides() {
+      axios.get("http://pravin-kumar.in/slides.json").then((response) => {
+        setComponents(response.data);
+      });
+    }
+
+    fetchSlides();
+  }, []);
+
   return (
     <SafeAreaView
       style={StyleSheet.create({
