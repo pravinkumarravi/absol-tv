@@ -74,8 +74,8 @@ export default function App() {
       });
     }
 
-    fetchSlides();
-  }, []);
+    setInterval(() => fetchSlides(), 1000 * 5); // in milliseconds
+  }, [components]);
 
   return (
     <SafeAreaView
