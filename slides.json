@@ -3,7 +3,7 @@
   "props": {
     "styles": {
       "flex": 1,
-      "backgroundColor": "green",
+      "backgroundColor": "white",
       "alignItems": "center",
       "justifyContent": "center"
     }
