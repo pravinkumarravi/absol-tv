@@ -12,7 +12,7 @@
     {
       "key": 1,
       "type": "Text",
-      "children": "Hello"
+      "children": "Hello World"
     },
     {
       "key": 2,
